@@ -1,6 +1,6 @@
 import { NFTStorage, File } from 'nft.storage';
 
-const NFT_STORAGE_KEY = "c64ee9a0.93ddbf38986d4b12b898121754bb9bed" || 'YOUR_NFT_STORAGE_API_KEY';
+const NFT_STORAGE_KEY = process.env.NEXT_PUBLIC_NFT_STORAGE_KEY || 'YOUR_NFT_STORAGE_API_KEY';
 
 /**
  * Store an NFT with metadata on IPFS via NFT.storage
